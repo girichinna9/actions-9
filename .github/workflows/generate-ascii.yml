@@ -12,8 +12,8 @@ jobs:
     - name: Execute cowsay commands
       run: cowsay -f dragon "Run for cover, I am a DRAGON....ROAR" >> dragon.txt
 
-    -name: sleep for 30 seconds
-     run: sleep 30
+    - name: sleep for 30 seconds
+      run: sleep 30
     
    test_job_2:
     runs-on: ubuntu-latest
