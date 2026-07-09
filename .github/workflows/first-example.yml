@@ -15,7 +15,7 @@ jobs:
             ls -ltra
             cat README.md
         
-        -name: Generate ASCII Artwork
+        - name: Generate ASCII Artwork
           run: cowsay -f cat "Run for cover, I am cat....meow" >> cat.txt
 
         # - name: List Files
