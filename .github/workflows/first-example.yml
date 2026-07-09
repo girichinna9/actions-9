@@ -9,11 +9,17 @@ jobs:
         - name: checkout repository
           uses: actions/checkout@v4
           
-        - name: Welcome Message
-          run: echo "My first guthub actions job"
+        - name: Welcome Message, list and read readme file
+          run: |
+            echo "My first guthub actions job"
+            ls -ltra
+            cat README.md
+        
+        -name: Generate ASCII Artwork
+          run: cowsay -f cat "Run for cover, I am cat....meow" >> cat.txt
 
-        - name: List Files
-          run: ls
+        # - name: List Files
+        #   run: ls
             
-        - name: Read File
-          run : cat README.md
+        # - name: Read File
+        #   run : cat README.md
