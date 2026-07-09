@@ -3,6 +3,7 @@ name: Generate ASCII Artwork
 on: push
 
 jobs:
+    
   build_job_1:
     runs-on: ubuntu-latest
     steps:
