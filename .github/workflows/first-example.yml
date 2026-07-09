@@ -5,7 +5,7 @@ on: [push, pullrequest]
 jobs: 
     first_job:
         runs-on: ubuntu-latest
-        steps:
+         steps:
             - name: Welcome Message
               run: echo "My first guthub actions job"
 
