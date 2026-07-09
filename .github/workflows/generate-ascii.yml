@@ -11,6 +11,6 @@ jobs:
      
     - name: List repo files
       run: ls -ltra
-      
+
     - name: Executing shell script
        run: ./ascii-script.sh
