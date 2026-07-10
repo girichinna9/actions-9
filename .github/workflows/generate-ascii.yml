@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Download artfact text file
-      uses: action/download-artifact@v3
+      uses: actions/download-artifact@v3
       with:
         name: dragon-text-file
 
@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Download artfact text file
-      uses: action/download-artifact@v3
+      uses: actions/download-artifact@v3
       with:
         name: dragon-text-file
 
