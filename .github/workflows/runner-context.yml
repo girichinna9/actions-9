@@ -5,14 +5,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v4
       - name: Build with logs
         run: |
           mkdir -p ${{ runner.temp }}/build_logs
           echo "Logs from building" > ${{ runner.temp }}/build_logs/build.logs
           ls -R ${{ runner.temp }}/build_logs
           cat ${{ runner.temp }}/build_logs/build.logs
-          exit 1
       - name: Upload logs on fail
         if: ${{ failure() }}
         uses: actions/upload-artifact@v4
